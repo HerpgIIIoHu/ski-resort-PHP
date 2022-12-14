@@ -1,0 +1,394 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  * a {
+    text-decoration: none; }
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.header {
+  background: url("../img/gori.jpg") 0 0 no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  padding-top: 20px; }
+  .header.prokat {
+    background: url("../img/invent_banner.jpg") 0 0 no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    padding-top: 20px; }
+  .header.order {
+    background: url("../img/order_banner.jpg") 0 0 no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 140px;
+    padding-top: 20px; }
+  .header.login_head {
+    background: url("../img/bannerreg.jpg") 0 0 no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 830px;
+    padding-top: 20px; }
+    .header.login_head h1 {
+      color: white; }
+  .header .header_info {
+    margin: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .header .header_info .logo_header {
+      display: flex;
+      align-items: center; }
+      .header .header_info .logo_header img {
+        cursor: pointer; }
+      .header .header_info .logo_header h2 {
+        color: white;
+        font-weight: 700;
+        margin-left: 20px;
+        max-width: 300px;
+        cursor: pointer; }
+    .header .header_info .header_menu ul {
+      display: flex;
+      align-items: center; }
+      .header .header_info .header_menu ul li {
+        margin-left: 40px; }
+        .header .header_info .header_menu ul li .call {
+          display: flex;
+          text-align: center;
+          align-items: center; }
+          .header .header_info .header_menu ul li .call img {
+            margin-right: 8px; }
+        .header .header_info .header_menu ul li .logout h3 {
+          padding: 7px 10px;
+          border-radius: 6px;
+          background-color: #fff;
+          color: red !important; }
+          .header .header_info .header_menu ul li .logout h3:hover {
+            transform: scale(1.1); }
+        .header .header_info .header_menu ul li .user {
+          display: flex;
+          align-items: center; }
+          .header .header_info .header_menu ul li .user img {
+            margin-right: 8px; }
+          .header .header_info .header_menu ul li .user h3 {
+            color: black !important; }
+            .header .header_info .header_menu ul li .user h3:hover {
+              transform: scale(1); }
+        .header .header_info .header_menu ul li a {
+          color: white; }
+          .header .header_info .header_menu ul li a .active {
+            border-bottom: 3px solid #fff; }
+          .header .header_info .header_menu ul li a h3 {
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 30px;
+            color: white; }
+            .header .header_info .header_menu ul li a h3:hover {
+              border-bottom: 3px solid white;
+              transform: scale(1.1);
+              transition: all 0.2s ease-in-out; }
+  .header .banner_text {
+    margin-top: 250px;
+    text-align: center; }
+    .header .banner_text.prokat {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 130px; }
+      .header .banner_text.prokat h1 {
+        font-family: 'Russo One', sans-serif;
+        font-weight: 900;
+        font-size: 80px;
+        color: #fff;
+        width: 700px; }
+    .header .banner_text h1 {
+      font-family: 'Russo One', sans-serif;
+      font-weight: 900;
+      font-size: 80px;
+      color: #2e2e2e; }
+    .header .banner_text h3 {
+      font-family: 'Lobster', cursive;
+      font-size: 65px;
+      color: #f5f5f5; }
+
+.info_cards .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .info_cards .cards .card {
+    width: 466px;
+    overflow: hidden;
+    height: 350px;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .info_cards .cards .card h2 {
+      color: white; }
+    .info_cards .cards .card:hover {
+      z-index: 1;
+      transform: scale(1.05);
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out; }
+  .info_cards .cards #card1 {
+    background-image: url("../img/invent.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .info_cards .cards #card2 {
+    background-image: url("../img/bus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .info_cards .cards #card3 {
+    background-image: url("../img/hotel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .info_cards .cards #card4 {
+    background-image: url("../img/instructor2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .info_cards .cards #card5 {
+    background-image: url("../img/kids.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .info_cards .cards #card6 {
+    background-image: url("../img/gori2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.safety {
+  margin-bottom: 60px; }
+  .safety .container {
+    background-color: #e7e7e7;
+    padding: 60px 0; }
+  .safety h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 26px;
+    font-weight: 900;
+    color: #3a3a3a; }
+  .safety .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px; }
+    .safety .cards .card {
+      background-color: transparent;
+      display: flex;
+      align-items: center; }
+      .safety .cards .card .icon_safety {
+        width: 100px;
+        height: 100px;
+        border: 3px solid black;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 20px; }
+      .safety .cards .card .text_safety {
+        width: 200px; }
+        .safety .cards .card .text_safety h3 {
+          color: #3a3a3a;
+          font-size: 19px;
+          letter-spacing: 0.5px;
+          margin-bottom: 5px; }
+      .safety .cards .card p {
+        color: #636363;
+        font-weight: 700;
+        letter-spacing: 0.5px; }
+      .safety .cards .card img {
+        padding: 5px; }
+
+.gallery {
+  margin-bottom: 60px; }
+  .gallery .container_photo h1 {
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1.3px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px; }
+  .gallery .container_photo .add_photo {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .gallery .container_photo .add_photo form {
+      width: 300px;
+      align-items: center;
+      text-align: center; }
+      .gallery .container_photo .add_photo form button {
+        float: left;
+        margin-left: 25px;
+        margin-top: 10px;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 16px;
+        color: white;
+        background-color: #2865f3; }
+  .gallery .container_photo p {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-weight: 500; }
+    .gallery .container_photo p a {
+      border-bottom: 1px solid #3a3a3a; }
+  .gallery .container_photo .all_photo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .gallery .container_photo .all_photo .card_photo img {
+      width: 350px;
+      height: 233px; }
+
+.services_company .services h1 {
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 1.3px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 29px;
+  margin-bottom: 40px; }
+.services_company .services h2 {
+  font-family: 'Russo One', sans-serif;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #b7b7b7;
+  letter-spacing: 1.3px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 27px;
+  margin-bottom: 30px; }
+.services_company .services h3 {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #505050; }
+.services_company .services .cards_servises {
+  margin: 0 180px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between; }
+  .services_company .services .cards_servises .card {
+    padding: 40px;
+    width: 345px;
+    background-color: #e9e9e9;
+    border-top: 5px solid #7c7c7c; }
+    .services_company .services .cards_servises .card:hover {
+      transform: scale(1.08);
+      background-color: #fff;
+      border-top: 10px solid #000;
+      transition: transform 0.5s ease-in-out;
+      box-shadow: 0px 2px 1px 1px #a4a4a4; }
+    .services_company .services .cards_servises .card ul li {
+      display: flex;
+      margin-bottom: 15px; }
+      .services_company .services .cards_servises .card ul li img {
+        margin: 0 8px; }
+    .services_company .services .cards_servises .card ul .enabled p {
+      font-weight: 500;
+      color: black; }
+    .services_company .services .cards_servises .card ul .not_included {
+      margin-left: 34px; }
+      .services_company .services .cards_servises .card ul .not_included p {
+        color: #b7b7b7; }
+    .services_company .services .cards_servises .card h3 {
+      font-family: 'Russo One', sans-serif;
+      letter-spacing: 1px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 22px;
+      margin: 20px;
+      border-top: 1px solid #b7b7b7;
+      padding-top: 20px; }
+    .services_company .services .cards_servises .card .button {
+      display: flex;
+      justify-content: center; }
+      .services_company .services .cards_servises .card .button .button_card {
+        cursor: pointer;
+        font-weight: 700px;
+        font-size: 18px;
+        text-align: center;
+        color: black;
+        border: 3px solid #3a3a3a;
+        padding: 7px 15px; }
+
+.footer .content {
+  background-color: #bcb5b5; }
+  .footer .content h1 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 20px; }
+  .footer .content .bottom {
+    font-family: 'Russo One', sans-serif;
+    padding: 10px;
+    text-align: center; }
+
+.modal {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  z-index: 2;
+  justify-content: center;
+  position: absolute;
+  top: 2500px;
+  left: 665px;
+  border-radius: 10px;
+  background-color: #d7d7d7; }
+  .modal img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer; }
+    .modal img:hover {
+      transform: scale(1.2); }
+  .modal.none {
+    display: none; }
+  .modal .full_modal {
+    width: 300px;
+    height: 250px;
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    .modal .full_modal .form_modal input {
+      width: 250px;
+      border: none;
+      padding: 10px 15px;
+      color: #000;
+      border: 1px solid #2e2e2e;
+      border-radius: 5px;
+      margin-bottom: 4px;
+      font-size: 18px;
+      font-weight: 700; }
+    .modal .full_modal .form_modal button {
+      width: 250px;
+      cursor: pointer;
+      padding: 10px 15px;
+      background-color: black;
+      border-radius: 10px;
+      color: #f5f5f5;
+      font-size: 18px;
+      font-weight: 700; }
+
+.btn_login h3 {
+  border-radius: 7px;
+  padding: 10px 20px;
+  background-color: #1ebe08; }
+
+.btn_reg h3 {
+  border-radius: 7px;
+  padding: 10px 15px;
+  background-color: #327bf2; }
+  .btn_reg h3:hover {
+    transform: none; }
+
+/*# sourceMappingURL=style.css.map */

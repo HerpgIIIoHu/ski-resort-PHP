@@ -1,0 +1,112 @@
+.inventar {
+  background-color: #ebeff2;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  .all_inventar {
+    h1 {
+      font-family: 'Russo One', sans-serif;
+      font-weight: 700;
+      font-size: 35px;
+      margin-bottom: 20px;
+      padding-top: 30px;
+      text-align: center;
+    }
+    h2 {
+      margin-left: 50px;
+      font-family: 'Russo One', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .type_sky {
+      margin-top: 50px;
+    }
+    .cards_sky {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      .sky {
+        background-color: #fff;
+        width: 410px;
+        border-radius: 10px;
+        margin-top: 20px;
+        &.premium {
+          .top_card {
+            background-color: rgb(24, 109, 255);
+          }
+        }
+        .top_card {
+          background-color: #0ed000;
+          padding: 10px 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+        &:hover {
+          transform: translateY(-9px);
+          box-shadow: 0px 0px 4px 4px rgb(169, 169, 169);
+          transition: all 0.5s ease;
+        }
+        h2 {
+          font-family: 'Russo One', sans-serif;
+          text-align: center;
+          font-size: 25px;
+          margin: 0;
+          color: rgb(255, 255, 255);
+        }
+        .card_text {
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          .left {
+            img {
+              height: 400;
+              margin-right: 10px;
+            }
+          }
+          .right {
+            h2 {
+              color: black;
+              text-align: left;
+              font-size: 22px;
+            }
+            p {
+              font-size: 19px;
+              font-weight: 500;
+              margin-bottom: 120px;
+            }
+            h3 {
+              text-decoration: line-through;
+              text-decoration-color: red;
+              margin-top: 10px;
+            }
+            button {
+              position: relative;
+              border: none;
+              cursor: pointer;
+              background-color: #3f59ff;
+              color: white;
+              margin-top: 19px;
+              font-size: 20px;
+              font-weight: 500;
+              padding: 10px;
+              padding-left: 25px;
+              padding-right: 35px;
+              border-radius: 10px;
+              img {
+                margin-left: 2px;
+                position: absolute;
+                top: 11px;
+              }
+              &:hover {
+                img {
+                  transform: translateX(10px);
+                  transition: transform 0.5s ease-in-out;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
