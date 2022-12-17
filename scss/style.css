@@ -33,6 +33,22 @@ body {
     width: 100%;
     height: 140px;
     padding-top: 20px; }
+  .header.hotel {
+    background: url("../img/hotel.jpg") 0 0 no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 20px; }
+    .header.hotel h1 {
+      color: white !important;
+      font-size: 75px !important; }
+  .header.info {
+    background: url("../img/gori3.jpeg") 0 0 no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 20px; }
+    .header.info h1 {
+      color: white !important;
+      font-size: 75px !important; }
   .header.login_head {
     background: url("../img/bannerreg.jpg") 0 0 no-repeat;
     background-size: cover;
@@ -81,7 +97,7 @@ body {
           .header .header_info .header_menu ul li .user img {
             margin-right: 8px; }
           .header .header_info .header_menu ul li .user h3 {
-            color: black !important; }
+            color: white !important; }
             .header .header_info .header_menu ul li .user h3:hover {
               transform: scale(1); }
         .header .header_info .header_menu ul li a {

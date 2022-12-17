@@ -38,6 +38,26 @@ body {
     height: 140px;
     padding-top: 20px;
   }
+  &.hotel {
+    background: url('../img/hotel.jpg') 0 0 no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 20px;
+    h1 {
+      color: white !important;
+      font-size: 75px !important;
+    }
+  }
+  &.info {
+    background: url('../img/gori3.jpeg') 0 0 no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 20px;
+    h1 {
+      color: white !important;
+      font-size: 75px !important;
+    }
+  }
   &.login_head {
     background: url('../img/bannerreg.jpg') 0 0 no-repeat;
     background-size: cover;
@@ -100,7 +120,7 @@ body {
               margin-right: 8px;
             }
             h3 {
-              color: rgb(0, 0, 0) !important;
+              color: rgb(255, 255, 255) !important;
               &:hover {
                 transform: scale(1);
               }

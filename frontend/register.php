@@ -24,7 +24,7 @@ if ($_SESSION['user']) {
         <div class="container">
             <div class="header_info">
                 <div class="logo_header">
-                    <a href="./index.php"><img width="60px" height="60px" src="../img/Слой 0.png" alt="logotype" /></a>
+                    <a href="./index.php"><img width="60px" height="60px" src="../img/logo.png" alt="logotype" /></a>
                     <a href="./index.php">
                         <h2>Горнолыжный курорт Эверест</h2>
                     </a>
@@ -60,7 +60,7 @@ if ($_SESSION['user']) {
                                 <a href="./register.php" class="btn_reg"><h3 class=active>Регистрация</h3></a>
                             </li>';
                         } else
-                            echo '<li><a href="#" class="user"><img width="21px" height="21px" src="../img/user2.png" /><h3>' . $_SESSION['user'] . '</h3></a></li>
+                            echo '<li><a href="#" class="user"><img width="21px" height="21px" src="../img/user4.png" /><h3>' . $_SESSION['user'] . '</h3></a></li>
                           <li ><a href="#" class="logout"><h3>Выход</h3></a></li>
                           ';
                         ?>

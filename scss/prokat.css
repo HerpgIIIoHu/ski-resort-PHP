@@ -79,8 +79,7 @@
             margin-left: 2px;
             position: absolute;
             top: 11px; }
-          .inventar .all_inventar .cards_sky .sky .card_text .right button:hover img {
-            transform: translateX(10px);
-            transition: transform 0.5s ease-in-out; }
+          .inventar .all_inventar .cards_sky .sky .card_text .right button:active {
+            transform: translateY(2px); }
 
 /*# sourceMappingURL=prokat.css.map */

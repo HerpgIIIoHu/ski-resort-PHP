@@ -32,7 +32,7 @@ session_start();
         <div class="container">
             <div class="header_info">
                 <div class="logo_header">
-                    <a href="./index.php"><img width="60px" height="60px" src="../img/Слой 0.png" alt="logotype" /></a>
+                    <a href="./index.php"><img width="60px" height="60px" src="../img/logo.png" alt="logotype" /></a>
                     <a href="./index.php">
                         <h2>Горнолыжный курорт Эверест</h2>
                     </a>
@@ -71,10 +71,10 @@ session_start();
                             if ($_SESSION['user']['type'] == 1) {
                                 echo '
                            <li>
-                                <a href="./orders.php"><h3>Бронь туров</h3></a>
+                                <a href="./orders.php"><h3>Бронь</h3></a>
                             </li>';
                             }
-                            echo '<li><a href="#" class="user"><img width="21px" height="21px" src="../img/user2.png" /><h3>
+                            echo '<li><a href="#" class="user"><img width="21px" height="21px" src="../img/user4.png" /><h3>
                             ' . $_SESSION['user']['FirstName'] . '</h3></a></li>
                           <li ><a href="#" onclick="logout()" class="logout"><h3>Выход</h3></a></li>
                           ';

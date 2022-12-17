@@ -34,7 +34,7 @@ if (!$_SESSION['user']) {
         <div class="container">
             <div class="header_info">
                 <div class="logo_header">
-                    <a href="./index.php"><img width="60px" height="60px" src="../img/Слой 0.png" alt="logotype" /></a>
+                    <a href="./index.php"><img width="60px" height="60px" src="../img/logo.png" alt="logotype" /></a>
                     <a href="./index.php">
                         <h2>Горнолыжный курорт Эверест</h2>
                     </a>
@@ -76,7 +76,7 @@ if (!$_SESSION['user']) {
                                 <a href="./orders.php"><h3 class=active>Бронь туров</h3></a>
                             </li>';
                             }
-                            echo '<li><a href="#" class="user"><img width="21px" height="21px" src="../img/user2.png" /><h3>
+                            echo '<li><a href="#" class="user"><img width="21px" height="21px" src="../img/user4.png" /><h3>
                             ' . $_SESSION['user']['FirstName'] . '</h3></a></li>
                           <li ><a href="#" onclick="logout()" class="logout"><h3>Выход</h3></a></li>
                           ';
@@ -99,6 +99,7 @@ if (!$_SESSION['user']) {
     <section class="orders">
         <div class="container">
             <div class="orders_block">
+                <h1>Бронь туров</h1>
                 <?php
                 require_once '../backend/connect.php';
                 $link = mysqli_connect($host, $user, $password, $database) or die("Ошибка " . mysqli_error($link));
@@ -131,7 +132,59 @@ if (!$_SESSION['user']) {
                             echo '<td><b>' . $row['numberTur'] . '</b></td>';
                             echo '<td><b>' . $row['price'] . ' руб.</b></td>';
                             echo '<td><b>' . $row['date'] . '</b></td>';
-                            echo '<td><button class=btn value=' . $row['id'] . ' onclick=closeOrder()>Закрыть заявку</button></td>';
+                            echo '<td><button class=btn value=' . $row['id'] . ' onclick=closeOrder(' . $row['id'] . ')>Закрыть заявку</button></td>';
+                            echo '</tr>';
+                        }
+                        echo '<center><table>';
+                    }
+                    mysqli_close($link);
+                }
+                ?>
+            </div>
+
+            <div class="orders_block">
+                <h1>Бронь отеля</h1>
+                <?php
+                require_once '../backend/connect.php';
+                $link = mysqli_connect($host, $user, $password, $database) or die("Ошибка " . mysqli_error($link));
+                if ($_SESSION['user']['type'] == 1) {
+                    $query = "SELECT * FROM hotelBooking";
+                    $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
+                    if ($result && mysqli_num_rows($result) > 0) {
+
+                        echo '<center><table>';
+                        echo '<tr> 
+                        <th>Id</th>
+                        <th>Id клиента</th>
+                        <th>Имя</th>
+                        <th>Отчество</th>
+                        <th>Телефон</th>
+                        <th>E-mail</th>
+                        <th>Персон</th>
+                        <th>Класс</th>
+                        <th>Цена 1 день</th>
+                        <th>Кол-во дней</th>
+                        <th>Прайс все дни</th>
+                        <th>Заезд</th>
+                        <th>Выезд</th>
+                        <th>Закрыть заявку</th>
+                        </tr>';
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo '<tr>';
+                            echo '<td><b>' . $row['id'] . '</b></td>';
+                            echo '<td><b>' . $row['idKlienta'] . '</b></td>';
+                            echo '<td><b>' . $row['FirstName'] . '</b></td>';
+                            echo '<td><b>' . $row['MiddleName'] . '</b></td>';
+                            echo '<td><b><a href=tel:' . $row['Phone'] . '>' . $row['Phone'] . '</a></b></td>';
+                            echo '<td><b><a href=mailto:' . $row['Email'] . '>' . $row['Email'] . '</a></b></td>';
+                            echo '<td><b>' . $row['numPeople'] . '</b></td>';
+                            echo '<td><b>' . $row['classRoom'] . '</b></td>';
+                            echo '<td><b>' . $row['Price'] . ' руб.</b></td>';
+                            echo '<td><b>' . $row['numDays'] . ' </b></td>';
+                            echo '<td><b>' . $row['allDaysPrice'] . ' руб.</b></td>';
+                            echo '<td><b>' . $row['dateStart'] . '</b></td>';
+                            echo '<td><b>' . $row['dateEnd'] . '</b></td>';
+                            echo '<td><button class=btn value=' . $row['id'] . ' onclick=closeOrderHotel(' . $row['id'] . ')>Закрыть заявку</button></td>';
                             echo '</tr>';
                         }
                         echo '<center><table>';

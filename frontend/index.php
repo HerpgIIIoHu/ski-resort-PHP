@@ -8,6 +8,7 @@ session_start();
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/logo.png">
     <link rel="stylesheet" href="../scss/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +31,7 @@ session_start();
         <div class="container">
             <div class="header_info">
                 <div class="logo_header">
-                    <a href="./index.php"><img width="60px" height="60px" src="../img/Слой 0.png" alt="logotype" /></a>
+                    <a href="./index.php"><img width="60px" height="60px" src="../img/logo.png" alt="logotype" /></a>
                     <a href="./index.php">
                         <h2>Горнолыжный курорт Эверест</h2>
                     </a>
@@ -69,10 +70,10 @@ session_start();
                             if ($_SESSION['user']['type'] == 1) {
                                 echo '
                            <li>
-                                <a href="./orders.php"><h3>Бронь туров</h3></a>
+                                <a href="./orders.php"><h3>Бронь</h3></a>
                             </li>';
                             }
-                            echo '<li><a href="#" class="user"><img width="21px" height="21px" src="../img/user2.png" /><h3>
+                            echo '<li><a href="#" class="user"><img width="21px" height="21px" src="../img/user4.png" /><h3>
                             ' . $_SESSION['user']['FirstName'] . '</h3></a></li>
                           <li ><a href="#" onclick="logout()" class="logout"><h3>Выход</h3></a></li>
                           ';

@@ -1,0 +1,173 @@
+body {
+  position: relative;
+}
+.hotels {
+  .hotel_block {
+    h1 {
+      text-align: center;
+      font-family: 'Russo One', sans-serif;
+      font-size: 45px;
+      margin: 40px 0;
+      border-bottom: 2px solid #000;
+      padding-bottom: 6px;
+    }
+    .hotel_rooms {
+      display: flex;
+      flex-wrap: wrap;
+      .room {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .left {
+          display: flex;
+          .left_part {
+            img {
+              width: 300px;
+              height: 200px;
+              border-radius: 6px;
+              margin-right: 20px;
+            }
+          }
+          .right_part {
+            position: relative;
+            max-width: 890px;
+            h2 {
+              font-family: 'Russo One', sans-serif;
+              letter-spacing: 1.5px;
+              font-weight: 900;
+              margin-bottom: 10px;
+              font-size: 26px;
+              color: rgb(21, 21, 21);
+            }
+            h3 {
+              font-weight: 400;
+              font-size: 18px;
+            }
+            .characteristic {
+              display: flex;
+              justify-content: space-between;
+              ul {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                bottom: 0;
+                margin-bottom: 10px;
+                li {
+                  display: flex;
+                  margin-right: 15px;
+                  img {
+                    margin-right: 10px;
+                  }
+                  p {
+                    font-size: 500;
+                    font-size: 18px;
+                  }
+                }
+              }
+              h3 {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin-bottom: 10px;
+                font-family: 'Russo One', sans-serif;
+                font-weight: 700px;
+                font-size: 24px;
+              }
+            }
+          }
+        }
+        .right {
+          .pay {
+            button {
+              padding: 10px 25px;
+              border: none;
+              font-weight: 700;
+              font-size: 18px;
+              border-radius: 6px;
+              cursor: pointer;
+              color: white;
+              background-color: rgb(56, 118, 225);
+              &:hover {
+                transform: scale(1.05);
+                transition: all 0.2s ease-in-out;
+              }
+            }
+          }
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+.modal_hotel {
+  display: none;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(137, 137, 137, 0.477);
+  &.visible {
+    display: block;
+  }
+  .form_block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal_block {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 7px;
+      align-items: center;
+      margin: 0 auto;
+      width: 700px;
+      height: 500px;
+      position: relative;
+      img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        input {
+          border-radius: 5px;
+          padding: 10px 15px;
+          color: black;
+          font-weight: 500;
+          font-size: 18px;
+          margin-bottom: 3px;
+        }
+        button {
+          margin-top: 10px;
+          padding: 10px 15px;
+          border: none;
+          color: white;
+          font-weight: 700;
+          font-size: 18px;
+          border-radius: 5px;
+          background-color: rgb(24, 109, 255);
+          cursor: pointer;
+          &:active {
+            transform: translateY(2px);
+          }
+        }
+      }
+    }
+  }
+}

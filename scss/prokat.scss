@@ -97,11 +97,8 @@
                 position: absolute;
                 top: 11px;
               }
-              &:hover {
-                img {
-                  transform: translateX(10px);
-                  transition: transform 0.5s ease-in-out;
-                }
+              &:active {
+                transform: translateY(2px);
               }
             }
           }
